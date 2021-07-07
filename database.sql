@@ -1,6 +1,6 @@
-create database `crud_with_login`;
+create database `uas19101287`;
 
-use `crud_with_login`;
+use `uas19101287`;
 
 CREATE TABLE `login` (
   `id` int(9) NOT NULL auto_increment,
