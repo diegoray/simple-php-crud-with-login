@@ -1,9 +1,12 @@
+<!-- Fidelis Baptista Evalino Pollo
+20101114 -->
+
 <?php session_start(); ?>
 <html>
 
 <head>
 	<title>Login</title>
-	<link href="login-style.css" rel="stylesheet" type="text/css">
+	<link href="css/login-style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -42,37 +45,18 @@
 			}
 		} else {
 		?>
-			<!-- <p>
-			<font size="+2">Login</font>
-		</p>
-		<form name="form1" method="post" action="">
-			<table width="75%" border="0">
-				<tr>
-					<td width="10%">Username</td>
-					<td><input type="text" name="username"></td>
-				</tr>
-				<tr>
-					<td>Password</td>
-					<td><input type="password" name="password"></td>
-				</tr>
-				<tr>
-					<td>&nbsp;</td>
-					<td><input type="submit" name="submit" value="Submit"></td>
-				</tr>
-			</table>
-		</form> -->
 			<form name="form1" method="post" action="">
 				<div class="box">
 					<h1>Login</h1>
 
-					<input type="text" name="username" class="email" placeholder="Username" />
+					<input type="text" name="username" class="email" placeholder="Username" required />
 
-					<input type="password" name="password" class="email" placeholder="Password" />
+					<input type="password" name="password" class="email" placeholder="Password" required />
 
 					<input type="submit" name="submit" value="Submit" class="btn">
 					<a href="index.php" class="btn">Back home</a>
 
-				</div> <!-- End Box -->
+				</div>
 
 			</form>
 		<?php

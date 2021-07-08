@@ -1,6 +1,6 @@
-create database `uas19101287`;
+create database `Fidelis-Baptista-Evalino-Pollo_20101114`;
 
-use `uas19101287`;
+use `Fidelis-Baptista-Evalino-Pollo_20101114`;
 
 CREATE TABLE `login` (
   `id` int(9) NOT NULL auto_increment,
@@ -15,7 +15,7 @@ CREATE TABLE `products` (
   `id` int(11) NOT NULL auto_increment,
   `name` varchar(100) NOT NULL,
   `qty` int(5) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
+  `price` int(11) NOT NULL,
   `login_id` int(11) NOT NULL,
   PRIMARY KEY  (`id`),
   CONSTRAINT FK_products_1

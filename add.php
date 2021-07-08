@@ -1,3 +1,6 @@
+<!-- Fidelis Baptista Evalino Pollo
+20101114 -->
+
 <?php session_start(); ?>
 
 <?php
@@ -14,7 +17,6 @@ if (!isset($_SESSION['valid'])) {
 
 <body>
 	<?php
-	//including the database connection file
 	include_once("connection.php");
 
 	if (isset($_POST['Submit'])) {
@@ -23,7 +25,6 @@ if (!isset($_SESSION['valid'])) {
 		$price = $_POST['price'];
 		$loginId = $_SESSION['id'];
 
-		// checking empty fields
 		if (empty($name) || empty($qty) || empty($price)) {
 
 			if (empty($name)) {
@@ -38,18 +39,11 @@ if (!isset($_SESSION['valid'])) {
 				echo "<font color='red'>Price field is empty.</font><br/>";
 			}
 
-			//link to the previous page
 			echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 		} else {
-			// if all the fields are filled (not empty) 
-
-			//insert data to database	
 			$result = mysqli_query($mysqli, "INSERT INTO products(name, qty, price, login_id) VALUES('$name','$qty','$price', '$loginId')");
 
 			header('Location: index.php');
-			//display success message
-			// echo "<font color='green'>Data added successfully.";
-			// echo "<br/><a href='view.php'>View Result</a>";
 		}
 	}
 	?>

@@ -1,10 +1,11 @@
+<!-- Fidelis Baptista Evalino Pollo
+20101114 -->
+
 <?php session_start(); ?>
 
 <?php
-//including the database connection file
 include_once("connection.php");
 
-//fetching data in descending order (lastest entry first)
 $product = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id DESC");
 ?>
 
@@ -12,7 +13,7 @@ $product = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id DESC");
 
 <head>
 	<title>Homepage</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -42,7 +43,7 @@ $product = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id DESC");
 				echo "<td>" . $res['price'] . "</td>";
 
 				if (isset($_SESSION['valid'])) {
-					echo "<td><a href=\"edit.php?id=$res[id]\" class=\"btn\" >Edit</a><a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Are you sure you want to delete?')\" class=\"btn\">Delete</a></td>";
+					echo "<td><a href=\"edit.php?id=$res[id]\" class=\"btn-edit\">Ubah</a><a href=\"delete.php?id=$res[id]\" onClick=\"return confirm('Yakin ingin menghapus data?')\" class=\"btn-delete\">Hapus</a></td>";
 				}
 			}
 			?>

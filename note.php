@@ -58,3 +58,31 @@ dari add
         </tr>
     </table>
 </form>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Header with html and css | Collapsing Header Tutorial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#">MouriThemes</a>
+                </div>
+                <nav>
+                    <a href="#">home</a> <a href="#">about</a> <a href="#">portfolio</a> <a href="#">services</a> <a href="#">contact</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>

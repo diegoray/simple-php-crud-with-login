@@ -1,19 +1,24 @@
-.edit-container {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #f9fbff;
+/* Fidelis Baptista Evalino Pollo
+20101114 */
 
-  }
-  
-  /* body {
-    background-color: #eee;
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
-    color: #222;
-  } */
-  
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+  display: grid;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+}
+
+.edit-container {
+    padding-top: 100px;
+    display: block;
+    text-align: center;
+}
+
   #form {
-    max-width: 700px;
+    max-width: 80%;
     padding: 2rem;
     box-sizing: border-box;
   }

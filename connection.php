@@ -1,12 +1,10 @@
+<!-- Fidelis Baptista Evalino Pollo
+20101114 -->
+
 <?php
 
-/**
- * mysql_connect is deprecated
- * using mysqli_connect instead
- */
-
 $databaseHost = 'localhost';
-$databaseName = 'uas19101287';
+$databaseName = 'Fidelis-Baptista-Evalino-Pollo_20101114';
 $databaseUsername = 'root';
 $databasePassword = '';
 

@@ -1,0 +1,109 @@
+/* Fidelis Baptista Evalino Pollo
+20101114 */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+  display: grid;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+}
+
+.container {
+	padding: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+  thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+  }
+
+  th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+
+  td {
+    padding: 1rem 2rem;
+  }
+
+  .btn{
+    background:#2ecc71;
+    width:125px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border-radius:4px;
+    border: #27ae60 1px solid;
+    text-decoration: none;
+    text-align: center;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    float:right;
+    margin-left:16px;
+    font-weight:800;
+    font-size:0.8em;
+  }
+  
+  .btn:hover{
+    background:#2CC06B; 
+  }
+
+  .btn-edit{
+    background: #FFA900;
+    width:125px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border-radius:4px;
+    border: #FFA900 1px solid;
+    text-decoration: none;
+    text-align: center;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    float:right;
+    margin-left:16px;
+    font-weight:800;
+    font-size:0.8em;
+  }
+
+  .btn-edit:hover{
+    background:#d89205; 
+  }
+
+  .btn-delete{
+    background: #CD113B;
+    width:125px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border-radius:4px;
+    border: #CD113B 1px solid;
+    text-decoration: none;
+    text-align: center;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    float:right;
+    margin-left:16px;
+    font-weight:800;
+    font-size:0.8em;
+  }
+
+  .btn-delete:hover{
+    background:#ad1032; 
+  }
